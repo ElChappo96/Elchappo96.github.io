@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #555;
-    color: #fff;
+    background-color: #2a2a2a;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,42 +11,72 @@ body {
 
 .container {
     width: 800px;
-    background-color: #333;
-    border: 2px solid #444;
+    background-color: #3b3b3b;
+    border: 3px solid #555555;
     border-radius: 10px;
     padding: 20px;
 }
 
 .profile, .weapon-mastery, .skill-mastery, .logs, .achievement-trophy {
-    border: 2px solid #444;
+    border: 2px solid #555555;
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 20px;
-    background-color: #444;
+    background-color: #4a4a4a;
 }
 
 .profile {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .profile-pic img {
     width: 150px;
+    height: 150px;
     border-radius: 10px;
+    margin-right: 20px;
 }
 
-.stats p, .skill p, .log-entry p, .achievement p {
+.profile-info h2, .profile-info p, .stats p, .skill p, .log-entry p, .achievement p {
     margin: 5px 0;
+}
+
+.stats {
+    margin-top: 10px;
 }
 
 .progress-bar {
-    background-color: #666;
+    background-color: #666666;
     border-radius: 5px;
     overflow: hidden;
     margin: 5px 0;
+    width: 100%;
+    height: 10px;
 }
 
 .progress {
     height: 10px;
-    background-color: #0f0;
+    background-color: #00ff00;
+}
+
+.skill-mastery, .weapon-mastery, .logs, .achievement-trophy {
+    padding: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.log-entry {
+    margin-bottom: 10px;
+}
+
+.achievement {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
 }
