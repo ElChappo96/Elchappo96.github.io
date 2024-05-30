@@ -3,6 +3,7 @@ body {
     background-color: #1a1a1a;
     color: #ffffff;
     margin: 0;
+    padding: 0;
 }
 
 header {
@@ -50,6 +51,11 @@ nav ul li a {
     color: #ff4400;
 }
 
+.hero p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
 .cta-button {
     display: inline-block;
     margin-top: 20px;
@@ -60,13 +66,13 @@ nav ul li a {
     border-radius: 5px;
 }
 
-.about, .skills, .portfolio, .services, .contact {
+.about, .skills, .projects, .services, .contact {
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.about h2, .skills h2, .portfolio h2, .services h2, .contact h2 {
+.about h2, .skills h2, .projects h2, .services h2, .contact h2 {
     text-align: center;
     color: #ff4400;
 }
@@ -118,30 +124,16 @@ nav ul li a {
     background-color: #ff4400;
 }
 
-.portfolio-categories {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+.projects .project {
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.portfolio-categories a {
-    color: #ff4400;
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid #ff4400;
-    border-radius: 5px;
-}
-
-.portfolio-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-.portfolio-item img {
+.projects .project img {
     width: 100%;
-    border-radius: 5px;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .services .service {
