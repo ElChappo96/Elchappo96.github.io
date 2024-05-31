@@ -61,6 +61,13 @@ section {
 
 #about {
     background-color: #fff;
+    
+}
+
+#about img {
+
+    height: 150px;
+    width: 150px;
 }
 
 #skills {
