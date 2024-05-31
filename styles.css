@@ -14,8 +14,7 @@ header {
     background-position: center;
     color: #fff;
     text-align: center;
-    padding: 2em 0;
-    height: 300px; 
+    height: 400px; /* Increased height */
 }
 
 header h1 {
@@ -24,7 +23,7 @@ header h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2em; 
+    font-size: 3em; /* Adjusted font size */
     font-family: 'Jacquard', sans-serif;
 }
 
@@ -34,8 +33,8 @@ nav {
     background-color: rgba(0, 0, 0, 0.7); 
     width: 100%;
     z-index: 1000; 
+    padding: 1em 0; /* Added padding to give some space inside the nav */
 }
-
 
 nav ul {
     list-style-type: none;
@@ -92,7 +91,7 @@ ul {
 }
 
 footer {
-    background-color: #12a3a3;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1em 0;
