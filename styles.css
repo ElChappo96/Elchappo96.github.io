@@ -40,7 +40,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: 3em;
 }
 
 nav a {
@@ -89,7 +89,7 @@ ul {
 }
 
 footer {
-    background-color: #126363;
+    background-color: #1e6666;
     color: #fff;
     text-align: center;
     padding: 1em 0;
