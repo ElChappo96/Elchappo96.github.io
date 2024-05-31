@@ -60,7 +60,7 @@ section {
 }
 
 #about {
-    background-color: #fff;
+    background-color: black;
     
 }
 
@@ -71,6 +71,7 @@ section {
 #about .text {
     flex: 1; 
     padding-right: 1em; 
+    color: #f4f4f4;
 }
 
 #about .image {
