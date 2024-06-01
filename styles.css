@@ -22,7 +22,7 @@ nav {
     background-color: var(--accent-color);
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: center; 
     padding: 0 20px; 
     z-index: 1;
 }
@@ -119,7 +119,7 @@ a {
     gap: 12px;
     justify-content: center; 
     align-items: flex-start; 
-    color: var(--fg-color);
+    color: var (--fg-color);
 }
 
 #header .text h1 {
@@ -302,4 +302,39 @@ footer {
 #contact .contactButton img {
     width: 24px;
     height: 24px;
+}
+
+#interactive-game {
+    background-color: var(--secondary-color);
+}
+
+#interactive-game #game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#interactive-game #question {
+    font-size: 24px;
+    color: var(--fg-color);
+    text-align: center;
+}
+
+#interactive-game #input,
+#interactive-game #button,
+#interactive-game #replay-button {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 2s;
+}
+
+.showing {
+    opacity: 1;
+    filter: blur(0);
 }
