@@ -50,7 +50,7 @@ section {
 }
 
 #about {
-    background-color: #232D3F;
+    background-color: #011b11;
 }
 
 #about .about-content {
@@ -84,7 +84,7 @@ section {
 }
 
 #skills {
-    background-color: #232D3F;
+    background-color: #011b11;
     display: flex;
     justify-content: space-around;
 }
@@ -113,11 +113,11 @@ section {
 }
 
 #projects {
-    background-color: #232D3F;
+    background-color: #011b11;
 }
 
 #contact {
-    background-color: #232D3F;
+    background-color: #011b11;
 }
 
 h1, h2 {
