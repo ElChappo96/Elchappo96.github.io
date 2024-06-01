@@ -31,7 +31,7 @@
                 <div class="text hidden">
                     <h1>Hi I'm Liam</h1>
                     <p>Thanks for dropping by.</p>
-                    <button class='button contactButton'>
+                    <button onclick="window.location.href='#contact';" class='button contactButton'>
                         Contact Me
                     </button>
                 </div>
@@ -42,39 +42,45 @@
     <section class="section" id="about">
         <div class="container">
             <div class="about-content">
-                <p class="hidden">Welcome! I’m an aspiring developer with a passion for everything games.</p>
-                <p class="hidden">I have a particular interest in <strong>Unreal Engine/Game programming and design.</strong></p>
-                <p class="hidden">I’m currently studying multiple online courses in <strong>Game Development, C++ through Codecademy/Udemy</strong>, as well as working on personal gaming projects in my spare time.</p>
+                <p class="para hidden">Welcome! I’m an aspiring developer with a passion for everything games.</p>
+                <p class="para hidden">I have a particular interest in <strong>Unreal Engine/Game programming and
+                        design.</strong></p>
+                <p class="para hidden">I’m currently studying multiple online courses in <strong>Game Development, C++
+                        through Codecademy/Udemy</strong>, as well as working on personal gaming projects in my spare
+                    time.</p>
             </div>
         </div>
     </section>
 
     <section class="section" id="skills">
-        <div class="container">
-            <div class="left-section">
-                <h2>Skills</h2>
-                <ul>
-                    <li>C++</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>Unreal Engine 4/5</li>
-                    <li>Blender</li>
-                </ul>
-            </div>
-            <div class="right-section">
-                <h2>Accreditations</h2>
-                <ul>
-                    <li>Accreditation 1</li>
-                    <li>Accreditation 2</li>
-                    <li>Accreditation 3</li>
-                    <li>Accreditation 4</li>
-                    <li>Accreditation 5</li>
-                </ul>
+        <div class="container skills">
+            <h2>Technologies I've worked with</h2>
+            <div class="badges">
+                <div class="badge hidden">
+                    <img src="assets/cssBadge.svg" alt="CSS Badge">
+                    <p>CSS</p>
+                </div>
+                <div class="badge hidden">
+                    <img src="assets/htmlBadge.svg" alt="HTML Badge">
+                    <p>HTML</p>
+                </div>
+                <div class="badge hidden">
+                    <img src="assets/unrealBadge.svg" alt="Unreal Engine 4/5 Badge">
+                    <p>Unreal Engine 4/5</p>
+                </div>
+                <div class="badge hidden">
+                    <img src="assets/javascriptBadge.svg" alt="Javascript Badge">
+                    <p>Javascript</p>
+                </div>
+                <div class="badge hidden">
+                    <img src="assets/c++Badge.svg" alt="C++ Badge">
+                    <p>C++</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="projects">
+    <!-- <section class="section" id="projects">
         <div class="container">
             <h2>Projects</h2>
             <div class="project">
@@ -88,14 +94,22 @@
                 <p>Description of project 2.</p>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="section" id="contact">
         <div class="container">
         </div>
         <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:chappo96@hotmail.com">chappo96@hotmail.com</a> or <a
-                href='tel:0481108875'>0481108875</a></p>
+        <p>The best way to reach me is via email.</p>
+        <a class="contactButton" href="mailto:chappo96@hotmail.com">
+            <img src="assets/email.svg" alt="Email Badge">
+        </a>
+        <a class="contactButton" href='tel:0481108875'>
+            <img src="assets/phone.svg" alt="Phone Badge">
+        </a>
+        <a class="contactButton" href='https://github.com/ElChappo96'>
+            <img src="assets/github.svg" alt="Github Badge">
+        </a>
         </div>
     </section>
 

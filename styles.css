@@ -61,11 +61,17 @@ nav a:hover {
 
 .hidden {
     opacity: 0;
+    filter: blur(5px);
     transition: all 2s;
 }
 
 .showing {
     opacity: 1;
+    filter: blur(0);
+}
+
+a {
+    color: var(--accent-color);
 }
 
 .button {
@@ -77,6 +83,10 @@ nav a:hover {
     color: var(--primary-color);
     font-weight: 600;
     font-size: 16px;
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 .button::after {
@@ -161,13 +171,21 @@ nav a:hover {
     align-items: center;
 }
 
-#about p {
+#about .para {
     text-indent: 50px;
     max-width: 1000px;
     margin: 0;
 }
 
-#about p strong {
+#about .para:nth-child(2) {
+    transition-delay: 300ms;
+}
+
+#about .para:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+#about .para strong {
     color: var(--accent-color); 
     font-weight: 400;
     font-style: italic;
@@ -179,35 +197,57 @@ nav a:hover {
     justify-content: space-around;
 }
 
-.left-section,
-.right-section {
+#skills .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#skills .badges {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+#skills .badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
     flex: 1;
-    padding: 2em;
-    text-align: center;
 }
 
-.left-section h2,
-.right-section h2 {
-    margin-top: 0;
+#skills .badge:nth-child(2) {
+    transition-delay: 300ms;
 }
 
-.left-section ul,
-.right-section ul {
-    list-style-type: none;
-    padding: 0;
+#skills .badge:nth-child(3) {
+    transition-delay: 600ms;
 }
 
-.left-section ul li,
-.right-section ul li {
-    margin-bottom: 10px;
+#skills .badge:nth-child(4) {
+    transition-delay: 900ms;
+}
+
+#skills .badge:nth-child(5) {
+    transition-delay: 1200ms;
+}
+
+#skills .badge img {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    flex-shrink: 0;
+}
+
+#skills .badge p {
+    font-size: 24px;
+    margin: 0;
 }
 
 #projects {
     background-color: var(--primary-color);
-}
-
-#contact {
-    background-color: #011b11;
 }
 
 h1, h2 {
@@ -229,4 +269,37 @@ footer {
     text-align: center;
     padding: 0.5em 0;
     font-weight: 600;
+}
+
+#contact {
+    background-color: var(--secondary-color);
+}
+
+#contact p {
+    font-size: 24px;
+}
+
+#contact .contactButton {
+    background-color: var(--accent-color);
+}
+
+#contact .contactButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    padding: 10px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact .contactButton:hover {
+    background-color: #4daf73;
+}
+
+#contact .contactButton img {
+    width: 24px;
+    height: 24px;
 }
