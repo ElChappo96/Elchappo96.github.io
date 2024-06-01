@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liam Chapman</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
-            <img src="logo.png" alt="Logo" class="logo">
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -20,64 +22,86 @@
         </nav>
     </header>
 
-    <section id="about">
-        <div class="about-content">
-            <div class="text">
-                <h2>About Me</h2>
-                <p>Hi, I'm Liam. I'm an aspiring game developer based in Sydney Australia.</p>
+    <section class="section" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="image hidden">
+                    <img src="me.jpg" alt="Liam Chapman">
+                </div>
+                <div class="text hidden">
+                    <h1>Hi I'm Liam</h1>
+                    <p>Thanks for dropping by.</p>
+                    <button class='button contactButton'>
+                        Contact Me
+                    </button>
+                </div>
             </div>
-            <div class="image">
-                <img src="me.jpg" alt="Liam Chapman">
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <p class="hidden">Welcome! I’m an aspiring developer with a passion for everything games.</p>
+                <p class="hidden">I have a particular interest in <strong>Unreal Engine/Game programming and design.</strong></p>
+                <p class="hidden">I’m currently studying multiple online courses in <strong>Game Development, C++ through Codecademy/Udemy</strong>, as well as working on personal gaming projects in my spare time.</p>
             </div>
         </div>
     </section>
-      
 
-
-    <section id="skills">
-        <div class="left-section">
-            <h2>Skills</h2>
-            <ul>
-                <li>C++</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>Unreal Engine 4/5</li>
-                <li>Blender</li>
-            </ul>
-        </div>
-        <div class="right-section">
-            <h2>Accreditations</h2>
-            <ul>
-                <li>Accreditation 1</li>
-                <li>Accreditation 2</li>
-                <li>Accreditation 3</li>
-                <li>Accreditation 4</li>
-                <li>Accreditation 5</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Basic Platformer</h3>
-            <p>This was a small little project i built using c++ and unreal engine 5, a basic platformer game where the end goal is to reach the finish line.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="left-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C++</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>Unreal Engine 4/5</li>
+                    <li>Blender</li>
+                </ul>
+            </div>
+            <div class="right-section">
+                <h2>Accreditations</h2>
+                <ul>
+                    <li>Accreditation 1</li>
+                    <li>Accreditation 2</li>
+                    <li>Accreditation 3</li>
+                    <li>Accreditation 4</li>
+                    <li>Accreditation 5</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section class="section" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Basic Platformer</h3>
+                <p>This was a small little project i built using c++ and unreal engine 5, a basic platformer game where
+                    the
+                    end goal is to reach the finish line.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+        </div>
         <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:chappo96@hotmail.com">chappo96@hotmail.com</a> or <a href='tel:0481108875'>0481108875</a></p>
+        <p>You can reach me at <a href="mailto:chappo96@hotmail.com">chappo96@hotmail.com</a> or <a
+                href='tel:0481108875'>0481108875</a></p>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Liam Chapman. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
-
-
