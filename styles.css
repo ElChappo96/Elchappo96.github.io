@@ -100,6 +100,28 @@ a {
     transform: translateY(-50%);
 }
 
+#button, #replay-button {
+    background-color: var(--accent-color);
+    border-radius: 80px;
+    border: none;
+    padding: 20px 32px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+#button:hover, #replay-button:hover {
+    background-color: #4daf73;
+}
+
+
 /* HEADER STYLES */
 #header {
     background: linear-gradient(to left, #080e0c, #153628);
@@ -250,6 +272,53 @@ a {
     background-color: var(--primary-color);
 }
 
+#projects .project-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+#projects .project {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+#projects video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#projects p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--fg-color);
+}
+
+#projects #game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#projects #question {
+    font-size: 24px;
+    color: var(--fg-color);
+    text-align: center;
+}
+
+#projects #input,
+#projects #button,
+#projects #replay-button {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+
 h1, h2 {
     margin-top: 0;
 }
@@ -327,6 +396,7 @@ footer {
     padding: 10px 20px;
     font-size: 18px;
 }
+
 
 .hidden {
     opacity: 0;

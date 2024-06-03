@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentQuestion = 0;
         buttonElement.textContent = "Next";
         replayButton.classList.add("hidden");
+        buttonElement.classList.remove("hidden");
         inputElement.classList.remove("hidden");
         showQuestion();
     }
@@ -94,6 +95,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     buttonElement.addEventListener("click", handleAnswer);
+    inputElement.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            handleAnswer();
+        }
+    });
     replayButton.addEventListener("click", startGame);
 
     startGame();
