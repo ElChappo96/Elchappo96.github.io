@@ -126,7 +126,7 @@ a {
 #header {
     background: linear-gradient(to left, #080e0c, #153628);
     padding-top: calc(80px + 128px); 
-    /* // height of the nav */
+    
 }
 
 #header .header-content {
@@ -180,7 +180,17 @@ a {
     filter: grayscale(100%);
 }
 
-/* ABOUT STYLES */
+.logo {
+    margin-right: auto; 
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+}
+
+
+
 #about {
     background-color: var(--secondary-color);
     font-size: 32px;
@@ -279,13 +289,27 @@ a {
     align-items: center;
 }
 
+#projects .project iframe {
+    width: 100%; 
+    height: 100%; 
+    aspect-ratio: 16/9; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+#projects h1 {
+    margin-bottom: 40px;
+    font-size: 36px; 
+}
+
 #projects .project {
     width: 100%;
     max-width: 800px;
     text-align: center;
 }
 
-#projects video {
+#projects iframe {
     width: 100%;
     height: auto;
     display: block;
