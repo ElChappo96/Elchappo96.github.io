@@ -279,7 +279,7 @@ a {
 }
 
 #projects {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 #projects .project-section {
@@ -365,7 +365,7 @@ footer {
 }
 
 #contact {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 #contact p {
