@@ -121,12 +121,10 @@ a {
     background-color: #4daf73;
 }
 
-
 /* HEADER STYLES */
 #header {
     background: linear-gradient(to left, #080e0c, #153628);
     padding-top: calc(80px + 128px); 
-    
 }
 
 #header .header-content {
@@ -141,7 +139,7 @@ a {
     gap: 12px;
     justify-content: center; 
     align-items: flex-start; 
-    color: var (--fg-color);
+    color: var(--fg-color);
 }
 
 #header .text h1 {
@@ -188,8 +186,6 @@ a {
     width: 50px; 
     height: auto;
 }
-
-
 
 #about {
     background-color: var(--secondary-color);
@@ -297,7 +293,6 @@ a {
     margin: 0 auto; 
 }
 
-
 #projects h1 {
     margin-bottom: 40px;
     font-size: 36px; 
@@ -341,7 +336,6 @@ a {
     padding: 10px 20px;
     font-size: 18px;
 }
-
 
 h1, h2 {
     margin-top: 0;
@@ -422,6 +416,17 @@ footer {
 }
 
 
+.game-container {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -431,4 +436,80 @@ footer {
 .showing {
     opacity: 1;
     filter: blur(0);
+}
+
+.project h3 {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}
+
+#projects h2 {
+    font-size: 48px; 
+    font-weight: bold; 
+    margin-bottom: 30px; 
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        height: auto; 
+        padding: 10px 20px; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    nav a {
+        padding: 10px; 
+        margin: 0; 
+    }
+
+    .header-content {
+        flex-direction: column; 
+        text-align: center; 
+        gap: 20px; 
+    }
+
+    .header .text h1 {
+        font-size: 40px; 
+    }
+
+    .container {
+        padding: 64px 20px; 
+    }
+
+    .about-content {
+        text-align: center; 
+    }
+
+    .skills .badges {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .project-section {
+        align-items: center; 
+    }
+
+    #projects .project {
+        width: 100%; 
+        max-width: 100%; 
+    }
+
+    #projects .project iframe {
+        width: 100%; 
+        height: auto; 
+    }
+
+    #contact {
+        padding: 64px 20px; 
+    }
+
+    #contact p {
+        text-align: center; 
+    }
 }
