@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 entry.target.classList.remove('showing');
             }
+            
         });
     });
 
@@ -136,3 +137,15 @@ function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    
+
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+
+    const hamburgerButton = document.querySelector('.hamburger');
+    hamburgerButton.addEventListener('click', toggleMenu);
+});
