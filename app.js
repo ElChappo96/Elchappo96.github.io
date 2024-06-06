@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 entry.target.classList.remove('showing');
             }
-            
         });
     });
 
@@ -77,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
             answers: {},
         },
         {
-            question: "Checking the room, you notice a small pressure pad in front of the chest. Taking your time to avoid it, you insert the key into the keyhole, unlocking the chest! Congratulations, you have found the hidden treasure! But more importantly, you invested this much time in something that took me 30 minutes. Imagine what I could do if you hired me full-time ;)",
+            question: "Checking the room, you notice a small pressure pad in front of the chest. Taking your time to avoid it, you insert the key into the keyhole, unlocking the chest! Congratulations, you have found the hidden treasure! But more importantly, you invested this much time in something that took me a short amount of time to create... Imagine what I could do if you hired me full-time ;)",
             answers: {},
         },
     ];
@@ -114,20 +113,21 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 questionElement.innerHTML = currentQuestionText;
             }, 2000); // Display the invalid answer message for 2 seconds
+            return; // Exit the function to prevent further execution
         }
+    
         if (questions[currentQuestion].answers === undefined || Object.keys(questions[currentQuestion].answers).length === 0) {
-            inputElement.classList.add("hidden");
-            buttonElement.classList.add("hidden");
-            replayButton.classList.remove("hidden");
+            setTimeout(() => {
+                inputElement.classList.add("hidden");
+                buttonElement.classList.add("hidden");
+                replayButton.classList.remove("hidden");
+                questionElement.textContent = "Game Over. Hit the play again button to play again.";
+            }, 18000); // Display the game over message after 2 seconds
         }
     }
 
     buttonElement.addEventListener("click", handleAnswer);
-    inputElement.addEventListener("keydown", (event) => {
-        if (event.key === "Enter") {
-            handleAnswer();
-        }
-    });
+
     replayButton.addEventListener("click", startGame);
 
     startGame();
@@ -135,17 +135,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+    navLinks.classList.toggle('open');
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    
+const hamburgerButton = document.querySelector('.hamburger');
 
-    function toggleMenu() {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('active');
-    }
-
-    const hamburgerButton = document.querySelector('.hamburger');
-    hamburgerButton.addEventListener('click', toggleMenu);
-});
+hamburgerButton.addEventListener('click', toggleMenu);
