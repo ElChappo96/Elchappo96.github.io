@@ -451,6 +451,16 @@ footer {
     margin-bottom: 30px; 
 }
 
+.hamburger {
+    position: absolute;
+    right: 60px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    background-color: var(--secondary-color);
+}
+
+
+
 
 @media (max-width: 768px) {
     nav {
@@ -459,8 +469,7 @@ footer {
     }
 
     nav ul {
-        flex-direction: column; 
-        gap: 10px; 
+        display: none; 
     }
 
     nav a {
@@ -472,6 +481,15 @@ footer {
         flex-direction: column; 
         text-align: center; 
         gap: 20px; 
+    }
+
+    #header .contactButton {
+        display: flex;
+        justify-content: center;
+    }
+
+    #header .text {
+        align-items: center;
     }
 
     .header .text h1 {
@@ -510,6 +528,13 @@ footer {
     }
 
     #contact p {
-        text-align: center; 
+        text-align: left; 
     }
 }
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
+
