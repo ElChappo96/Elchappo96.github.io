@@ -468,7 +468,7 @@ footer {
 @media (max-width: 768px) {
     nav {
         height: auto;
-        padding: 10px 0 10px 20px; /* Reduced right padding */
+        padding: 10px 0 10px 5px; 
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -550,6 +550,7 @@ footer {
 
     .logo {
         margin-right: 5px;
+        margin-left: 0px; 
     }
 }
 
