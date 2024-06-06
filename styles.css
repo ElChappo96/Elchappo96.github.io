@@ -337,6 +337,15 @@ a {
     font-size: 18px;
 }
 
+#projects .project h3 {
+    margin-bottom: 40px; 
+}
+
+#projects .project p {
+    margin-top: 30px; 
+}
+
+
 h1, h2 {
     margin-top: 0;
 }
@@ -451,36 +460,44 @@ footer {
     margin-bottom: 30px; 
 }
 
-.hamburger {
-    position: absolute;
-    right: 60px; 
-    top: 50%; 
-    transform: translateY(-50%);
-    background-color: var(--secondary-color);
-}
+
 
 
 
 
 @media (max-width: 768px) {
     nav {
-        height: auto; 
-        padding: 10px 20px; 
+        height: auto;
+        padding: 10px 0 10px 20px; /* Reduced right padding */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     nav ul {
-        display: none; 
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    nav li {
+        margin: 0;
     }
 
     nav a {
-        padding: 10px; 
-        margin: 0; 
+        padding: 10px 15px;
+        font-size: 14px;
+        text-align: center;
     }
 
     .header-content {
-        flex-direction: column; 
-        text-align: center; 
-        gap: 20px; 
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 
     #header .contactButton {
@@ -493,48 +510,46 @@ footer {
     }
 
     .header .text h1 {
-        font-size: 40px; 
+        font-size: 40px;
     }
 
     .container {
-        padding: 64px 20px; 
+        padding: 64px 20px;
     }
 
     .about-content {
-        text-align: center; 
+        text-align: center;
     }
 
     .skills .badges {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .project-section {
-        align-items: center; 
+        align-items: center;
     }
 
     #projects .project {
-        width: 100%; 
-        max-width: 100%; 
+        width: 100%;
+        max-width: 100%;
     }
 
     #projects .project iframe {
-        width: 100%; 
-        height: auto; 
+        width: 100%;
+        height: auto;
     }
 
     #contact {
-        padding: 64px 20px; 
+        padding: 64px 20px;
     }
 
     #contact p {
-        text-align: left; 
+        text-align: left;
     }
-}
 
-@media (min-width: 769px) {
-    .hamburger {
-        display: none;
+    .logo {
+        margin-right: 5px;
     }
 }
 

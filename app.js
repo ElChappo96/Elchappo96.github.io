@@ -133,11 +133,3 @@ document.addEventListener("DOMContentLoaded", () => {
     startGame();
 });
 
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('open');
-}
-
-const hamburgerButton = document.querySelector('.hamburger');
-
-hamburgerButton.addEventListener('click', toggleMenu);
