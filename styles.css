@@ -468,13 +468,12 @@ footer {
 @media (max-width: 768px) {
     nav {
         height: auto;
-        padding: 5px 10px; /* Reduced padding */
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        overflow: hidden; /* Ensure no overflow */
-        box-sizing: border-box; /* Ensure padding is included in the width */
-        width: 100%; /* Ensure the nav takes full width */
+        overflow: hidden; 
+        box-sizing: border-box; 
+        width: 100%;
     }
 
     nav ul {
@@ -482,36 +481,36 @@ footer {
         padding: 0;
         margin: 0;
         display: flex;
-        gap: 5px; /* Reduced gap between items */
+        gap: 5px; 
         align-items: center;
         flex-direction: row;
-        flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
-        overflow: hidden; /* Ensure no overflow */
-        width: 100%; /* Ensure ul takes full width */
-        box-sizing: border-box; /* Ensure padding is included in the width */
+        flex-wrap: wrap; 
+        overflow: hidden; 
+        width: 100%; 
+        box-sizing: border-box; 
     }
 
     nav li {
         margin: 0;
-        flex-shrink: 1; /* Allow items to shrink if necessary */
+        flex-shrink: 1; 
     }
 
     nav a {
-        padding: 5px 10px; /* Reduced padding */
-        font-size: 12px; /* Reduced font size */
+        padding: 5px 10px; 
+        font-size: 12px; 
         text-align: center;
-        display: block; /* Ensure the anchor tags behave properly */
-        white-space: nowrap; /* Prevent text wrapping */
+        display: block; 
+        white-space: nowrap; 
     }
 
     .logo {
         margin-right: 5px;
-        margin-left: 10px; /* Adjust this line to move the logo to the left */
-        flex-shrink: 0; /* Prevent logo from shrinking */
+        margin-left: 10px; 
+        flex-shrink: 0; 
     }
 
     nav ul {
-        padding-left: 10px; /* Add this line to move navbar items to the left */
+        padding-left: 10px; 
     }
 
     .header-content {
@@ -535,7 +534,7 @@ footer {
 
     .container {
         padding: 64px 20px;
-        box-sizing: border-box; /* Ensure padding is included in the width */
+        box-sizing: border-box; 
     }
 
     .about-content {
@@ -563,7 +562,7 @@ footer {
 
     #contact {
         padding: 64px 20px;
-        box-sizing: border-box; /* Ensure padding is included in the width */
+        box-sizing: border-box; 
     }
 
     #contact p {
