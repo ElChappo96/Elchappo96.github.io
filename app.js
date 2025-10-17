@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
             },
         },
         {
-            question: "With a deep breath, you descend into the darkness, the cold air sending shivers down your spine. As you navigate the winding passages, you come across a series of traps and obstacles, each more treacherous than the last. Despite your best efforts, you trigger a pressure plate, setting off a cascade of falling rocks that block your path. With no way out, you're trapped beneath the earth. You meet a trapped demise.",
+            question: "With a deep breath, you descend into the darkness, the cold air sending shivers down your spine. As you navigate the winding passages, you come across a series of traps and obstacles, each more treacherous than the last. Despite your best efforts, you trigger a pressure plate, setting off a cascade of falling rocks that block your path. With no way out, you're trapped beneath the earth. You meet a oxygenless demise.",
             answers: {},
         },
         {
